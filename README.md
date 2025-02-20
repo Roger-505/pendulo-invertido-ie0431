@@ -24,10 +24,10 @@ El modelo fue diseñado en Simulink utilizando el modelo de Simscape "Inverted P
 
 ## Diseño del Actuador y Control
 
-Se implementó un controlador PID para la regulación de la variable manipulada \( V_f \). El sistema fue diseñado con dos lazos de retroalimentación, cada uno de los cuales controla un ángulo diferente:
+Se implementó un controlador PID para la regulación de la variable manipulada $` V_f $`. El sistema fue diseñado con dos lazos de retroalimentación, cada uno de los cuales controla un ángulo diferente:
 
-- \( C_\alpha(s) \): Controlador para el ángulo del péndulo.
-- \( C_\theta(s) \): Controlador para el ángulo del brazo rotatorio.
+- $` C_\alpha(s) $`: Controlador para el ángulo del péndulo.
+- $` C_\theta(s) $`: Controlador para el ángulo del brazo rotatorio.
 
 Se sintonizaron los controladores utilizando métodos de optimización y sintonización empírica para obtener un desempeño óptimo en términos de respuesta dinámica y robustez.
 
