@@ -1,0 +1,35 @@
+\begin{figure} 
+    \centering
+    \tikzstyle{block} = [draw, fill=white, rectangle, 
+    minimum height=3em, minimum width=4em, node distance=2cm]
+    \tikzstyle{gain} = [draw, fill=white, rectangle, 
+    minimum height=3em, minimum width=2em, node distance=2cm]
+    \tikzstyle{sum} = [draw, fill=white, circle, minimum size=15pt, node distance=2cm]
+    \tikzstyle{input} = [coordinate]
+    \tikzstyle{output} = [coordinate]
+    \tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+    \begin{tikzpicture}[auto, node distance=2cm]
+       \node [input, name=input]{};
+       \node [sum, right of=input](sum1){};
+       \node [block, right of=sum1](controlador){$C(s)$};
+   \node [block, right of=controlador, xshift=2.5em](proceso){\parbox{2cm}{\centering Modelo presa--depredador}};
+      \node [input, name=pert,above of=proceso,yshift=-2em]{};
+       \node [output, right of=proceso](output){};
+
+       \draw [-{Latex}] (input) -- (sum1) node[name=r, midway, above]{$y^*(t)$};
+       \draw [-{Latex}] (sum1) -- (controlador) node[name=error, midway, above]{$e(t)$};
+       \draw [-{Latex}] (controlador) -- (proceso) node[name=control, midway, above]{$\alpha(t)$};
+       \draw [-{Latex}] (proceso) -- (output) node[name=y, midway, above]{};
+       \node[right] at (output){$y(t)$};
+       \draw [-{Latex}] (y) -- ++(0,-5em) coordinate (ort) -- (ort) -- (ort-|sum1) -- (sum1);
+
+        \node [above left=-4pt of sum1]{$+$};
+        \node [below left=-4pt of sum1]{$-$};
+
+       \node[above] at (pert){ $\gamma(t)$}; 
+       \draw [-{Latex}] (pert) -- (proceso);
+    \end{tikzpicture}
+    \caption{Esquema de control para el sistema de la \hyperref[fig1]{Figura 1}}
+    \label{fig4}
+\end{figure}
+

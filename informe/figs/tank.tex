@@ -1,0 +1,64 @@
+\begin{figure}[!h]
+\centering
+\begin{minipage}{0.4\linewidth}
+\centering
+\begin{tikzpicture}
+\pic (tanque) at (3.5 ,0.4){tank};
+\coordinate (sheesh) at ($(tanque-top left)+(-1,0)$);
+\node[left] at (sheesh){$q_{in}(t)$};
+\draw [main stream] (sheesh) -- (tanque-top left);
+\draw [secondary stream] (tanque-bottom right) -- ++(0.5,0) coordinate (temp);
+\coordinate (lmao) at ($(temp)+(0.2,0)$);
+\coordinate (lmao2) at ($(temp)+(0.4,0)$);
+\pic (V) at (lmao){valve=main};
+\draw [secondary stream] (lmao2) -- ++(0.5,0) coordinate (salida);
+\node [right] at (salida){$q_{out}(t)$};
+\node [yshift=0.6cm] at (V-anchor){$k$};
+\node [yshift=-0.5cm] at (V-anchor){$x(t)$};
+\pic (A) at (V-anchor) {actuator};
+\coordinate (kk) at (tanque-top right);
+\coordinate (kk2) at ($(kk)+(1,0)$);
+\draw [secondary stream] (kk) -- (kk2);
+\draw [secondary stream] (kk2) -- (kk);
+\node[right] at (kk2){$P_{atm}$};
+\node[left] at (tanque-left){$h _{max}$};
+\node[below] at (tanque-bottom){$A$};
+
+
+\end{tikzpicture}
+\caption*{(a): Sistema de nivel}
+\end{minipage}
+\begin{minipage}{0.5\linewidth}
+\centering
+\begin{tikzpicture}[auto, node distance=2.5cm]
+\tikzstyle{block} = [draw, fill=white, rectangle, 
+    minimum height=3em, minimum width=4em, node distance=2.5cm]
+    \tikzstyle{gain} = [draw, fill=white, rectangle, 
+    minimum height=3em, minimum width=2em, node distance=2.5cm]
+    \tikzstyle{sum} = [draw, fill=white, circle, minimum size=15pt, node distance=2cm]
+    \tikzstyle{input} = [coordinate]
+    \tikzstyle{output} = [coordinate]
+    \tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+
+   \node [input, name=input]{};
+   \node [block, right of=input,xshift=-3em](actuador){$G_2(s)$};
+   \node [block, right of=actuador](proceso){Tanque};
+   \node [block, right of=proceso](sensor){$G_1(s)$};
+   \node [output, right of=sensor,xshift=-3em](output){};
+   \node [input, name=pert,above of=proceso,yshift=-3em]{};
+
+   \node[above] at (pert){ $q _{in}(t)$}; 
+   \node[left] at (input){$x_c(t)$};
+   \draw [-{Latex}] (input)-- (actuador);
+   \draw [-{Latex}] (actuador) -- (proceso) node[name=x, midway, above]{$x(t)$};
+   \draw [-{Latex}] (proceso) -- (sensor) node[name=h, midway, above]{$h(t)$};
+   \draw [-{Latex}] (sensor) -- (output) node[name=htecho, right]{$\widehat{h}(t)$};
+   \draw [-{Latex}] (pert) -- (proceso);
+   %\draw [-{Latex}] (y) -- ++(0,-5em) coordinate (ort) -- (ort) -- (ort-|sum1) -- (sum1);
+
+\end{tikzpicture}
+\caption*{(b): Conjunto actuador--tanque--sensor}
+\end{minipage}
+\caption{Sistema por ser simulado}
+\label{tanque}
+\end{figure}

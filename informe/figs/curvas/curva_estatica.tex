@@ -1,0 +1,54 @@
+\begin{figure}
+\centering
+\begin{minipage}{0.4\linewidth}
+\centering
+\begin{tikzpicture}
+    \begin{semilogyaxis}[
+        xlabel={$x$},
+        ylabel={$h_{ss}$ [m]},
+        legend pos=north west,  % Position of the legend         
+        legend cell align={left},
+        xmin=0.05,
+        ymin=0.0030,
+        xmax=1,
+        ymax=32,
+        legend pos=north east,
+        xtick distance = 0.2
+    ]
+    %\addplot[blue, thick,mark=*] table [x index=0, y index=1, col sep=tab]{test.txt};
+    \addplot[blue] table [x index=0, y index=1, col sep=tab]{figs/test.txt};
+    \addplot[orange] table [x index=0, y index=1, col sep=tab]{figs/qin_3.txt};
+	\addplot[red] table [x index=0, y index=1, col sep=tab]{figs/qin_1.txt};
+    \end{semilogyaxis}
+\end{tikzpicture}
+\caption*{(a): Sin normalizar}
+\end{minipage}
+\begin{minipage}{0.4\linewidth}
+\centering
+\begin{tikzpicture}
+    \begin{semilogyaxis}[
+        ylabel={$h _{ss}$ [\%]},
+        xlabel={$x$ [\%]},
+        legend pos=north west,  % Position of the legend
+        legend cell align={left},
+        xmin=0.0,
+        ymin=0.23961,
+        xmax=100,
+        ymax=100,
+        legend pos=north east,
+        xtick distance = 20,
+        ytick distance = 10
+    ]
+    \addplot[blue] table [x expr=\thisrow{apertura}*100/(1 - 0.05) - 100*0.05/(1 - 0.05), y expr=\thisrow{nivel}*100/(30 - 0.068672) + 100*0.068672/(30 - 0.068672)]{figs/test.txt};
+	\addlegendentry{$q _{in,\max}\times5\%$};
+    \addplot[orange] table [x expr=\thisrow{apertura}*100/(1 - 0.05) - 100*0.05/(1 - 0.05), y expr=\thisrow{nivel}*100/(30 - 0.068672) + 100*0.068672/(30 - 0.068672)]{figs/qin_3.txt};
+	\addlegendentry{$q _{in,\max}\times3\%$};
+    \addplot[red] table [x expr=\thisrow{apertura}*100/(1 - 0.05) - 100*0.05/(1 - 0.05), y expr=\thisrow{nivel}*100/(30 - 0.068672) + 100*0.068672/(30 - 0.068672)]{figs/qin_1.txt};
+	\addlegendentry{$q _{in,\max}\times1\%$};
+\end{semilogyaxis}
+\end{tikzpicture}
+\caption*{(b): Normalizada}
+\end{minipage}
+\caption{Curvas estáticas obtenidas desde la variable manipulada hasta la variable controlada}
+\label{estatica}
+\end{figure}

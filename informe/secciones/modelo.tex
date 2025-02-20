@@ -1,0 +1,101 @@
+\section{Aclaración con respecto a la entrega de esta evaluación}
+Hola profesor.
+Previamente le había enviado un correo solicitando tiempo extra para entregar
+esta evaluación, debido a que, a pesar de que ya había logrado simulado exitosamente
+el sistema de control que me había planteado diseñar, ocupaba más tiempo para realizar
+el informe escrito.
+Usted me había concedido el tiempo extra de acuerdo al correo sin una fecha límite definida, pero debido a todas las evaluaciones
+de final de semestre, estuve escazo de tiempo para terminar este informe (en particular, un informe de 80 páginas de un proyecto de otro curso
+que estoy llevando que me tomó todo un fin de semana en completar).
+Debido a eso, no entregué el informe de este trabajo para el momento en que se revisó el examen \#2.
+Con suerte, logré despejarme de todas las evaluaciones de los otros cursos, a costo de haber puesto el informe de este examen
+hasta el final de la cola de cosas que tenía que hacer a final de semestre.
+Espero que pueda entender esta situación, y estoy atento ante las medidas que usted considere pertinentes 
+tomar para solventarla.
+A continuación, se muestra una versión muy corta, muy al grano, y (hice mi mejor esfuerzo para que lo fuera) muy buena del reporte para esta evaluación.
+
+\section{Modelado de un sistema dinámico entre presa y depredador}
+El esquema del sistema a modelar se muestra en la Figura 1.
+Él consta de un sistema de péndulo invertido de brazo rotatorio, incluyendo actuador y sensores
+para medir el cambio de los ángulos de rotación del brazo rotatorio y del péndulo.
+Las señales del sistema son descritas en la \hyperref[t1]{Tabla 1}.
+
+\begin{table}
+\centering
+\begin{tabular}{ccccp{3cm}}
+\toprule
+Señal &  Unidades & Rango de valores & Valor nominal & Descripción\\
+\midrule
+$\Delta \hat{\alpha}(t)$ & mA & $[4,\, 20]$ & 12& Valor sensado de $\alpha(t)$\\
+$\Delta \hat{\theta}(t)$ & mA & $[ 4,\, 20]$ & 12& Valor sensado de $\theta(t)$\\
+$\widetilde{V_m}(t)$ & V & $[0,\, 5]$ & 2.5       & Variable manipulada\\
+$\alpha(t)$ & rad & $[ 5\pi/6,\, 7\pi/6]$ & $\pi$                           & Ángulo del péndulo con respecto al eje $-z$\\
+$\theta(t)$ & rad & $[-\pi/2,\,\pi/2]$ & 0& Ángulo del brazo rotatorio medido con respecto al eje $x$\\
+$V_m(t)$ & V & $[-10,\, 10]$ & 0& Tensión recibida por el motor DC del sistema\\
+$\tau(t)$ & $\text{N}\cdot\text{m}$ & $[0,\,0.037]$& 0 & Torque aplicado al péndulo rotatorio. Perturbación\\
+\bottomrule
+\end{tabular}
+\caption{Señales del sistema por controlar}
+\label{t1}
+\end{table}
+
+El modelado se realizó utilizando el demo de Simulink \href{https://la.mathworks.com/matlabcentral/fileexchange/84175-inverted-pendulum-simscape-model-and-controller-design?requestedDomain=}{Inverted Pendulum Simscape Model and Controller design}.
+El valor nominal de $\alpha(t)$ y $\theta(t)$ mostrados en la \hyperref[t1]{Tabla 1} son los que ya venían configurados en el demo.
+$t$ es el tiempo, cuyas unidades son segundos.
+Por simplicidad, se supondrá que ambos sensores son equivalentes.
+Se plantearon los siguietnes objetivos para el sistema de control:
+\begin{itemize}
+    \item Cero error en estado estacionario ante cambios en la perturbación y en el valor deseado.
+    \item Menor tiempo de asentamiento a lazo cerrado en comparación a lazo abierto.
+\end{itemize}
+
+Debido a la alto grado de no linealidad del sistema en puntos de operación con $\alpha(t) \neq \pi \wedge \alpha(t) \neq 0$, no se consideraron cambios en el valor deseado, de tal forma que se consideraron valores deseados constantes. 
+
+\subsection{Diseño del actuador para el péndulo invertido rotatorio}
+Se realizó una identificación preeliminar del sistema sin actuador ni sensores.
+Para $P_{\alpha}(s)$, la constante de tiempo asociada a esta función de transferencia se muestra
+en \eqref{cteTiempo}.
+\begin{equation}
+    T_{\alpha} = 0.12454 \label{cteTiempo}
+\end{equation}
+Esta es la constante de tiempo dominante del sistema, ya que $P_{\theta}(s)$ es integrante.
+En base a esto, se modeló la dinámica de los sensores y actuador como funciones de transferencia
+de primer orden con constantes de tiempo \eqref{ctesTiempo}.
+\begin{equation}
+    \begin{aligned}
+        T_{sensor} = \frac{T_{\alpha}}{50}\label{ctesTiempo}\\
+        T_{actuador} = \frac{T_{\alpha}}{50}
+    \end{aligned}
+\end{equation}
+Además, se escojieron los puntos de operación mostrados en el \hyperref[t1]{Cuadro 1},
+con lo cual se normalizó cada una de las señales por medio de las relaciones \eqref{relaciones}.
+\begin{equation}
+    \begin{aligned}
+        V_m(t) &= 4\widetilde{V_m}(t) - 10\label{relaciones}\\
+        \Delta\widehat{\alpha}(t) &= \frac{ \SI{48e-3}{}}{\pi}\alpha(t) + \SI{12e-3}{} -\pi\\
+        \Delta\widehat{\theta}(t) &= \frac{ \SI{16e-3}{}}{\pi}\theta(t) + \SI{12e-3}{}
+    \end{aligned}
+\end{equation}
+Por tanto, las ganancias de los sensores tendrán unidades A/rad, mientras que el actuador tendrá unidades p.u, ya 
+que recibe y entrega señales de tensión.
+
+\subsection{Identificación del sistema}
+Al ser el sistema por controlar tipo SIMO, se identificaron dos plantas, $P_{\alpha}(s)$ y
+$P_{\theta}(s)$ que satisfacen la relación \eqref{ident}.
+\begin{equation}
+    \begin{aligned}
+        P_{\alpha}(s) = \frac{\Delta\hat{\alpha}(s)}{\widetilde{V_m}(s)}\Bigg|_{\theta(t)=0}\label{ident}\\
+        P_{\theta}(s) = -\frac{\Delta\hat{\theta}(s)}{\widetilde{V_m}(s)}\Bigg|_{\alpha(t)=\pi}
+    \end{aligned}
+\end{equation}
+    $\forall t > \SI{0}{s}$. Las condiciones que se impusieron sobre $\alpha(s)$ y $\theta(s)$ para identificar cada una de las dos plantas
+    se lograron al modificar la fricción de los rodamientos que unen las piezas del modelo de Simscape, permitiendo mantener un ángulo fijo cuando se está intentando ver el efecto 
+    de $\widetilde{V_m}(t)$ sobre el otro.
+    Las funciones de transferencia identificadas se muestran en \eqref{anguloIdent}.
+\begin{equation}
+    \begin{aligned}
+        P_{\alpha}(s) = \frac{ \SI{5.248e-3}{}}{(0.1094s)^2 - 1}\\\label{anguloIdent} 
+        P_{\theta}(s) = \frac{ \SI{-5.527e-2}{}}{s(0.3385s + 1)}
+    \end{aligned}
+\end{equation}
+El signo negativo de la ganancia de $P_{\theta}(s)$ proviene del esquema de control utilizado.

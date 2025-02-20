@@ -1,0 +1,169 @@
+%% Creator: Inkscape 1.2.2 (b0a8486541, 2022-12-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'presa_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{901.83318568bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.9502241)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{presa_svg-tex.pdf}}%
+    \put(0.10439158,0.47344694){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0.1080687,0.46956168){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}−\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{presa_svg-tex.pdf}}%
+    \put(0.3963244,0.47677716){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Modelo\end{tabular}}}}%
+    \put(0.36305679,0.45901597){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Presa-depredadorx\end{tabular}}}}%
+    \put(0.49529446,0.4906531){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x(t)\end{tabular}}}}%
+    \put(0.49548539,0.45735085){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y(t)\end{tabular}}}}%
+    \put(0.42742337,0.49009806){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}phi(t)\end{tabular}}}}}%
+    \put(0.32585152,0.47400198){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}alpha(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{presa_svg-tex.pdf}}%
+    \put(0.30196726,0.80424926){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Modelo\end{tabular}}}}%
+    \put(0.26843956,0.78648806){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Presa-depredador1\end{tabular}}}}%
+    \put(0.40112903,0.79592369){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y(t)\end{tabular}}}}%
+    \put(0.33306701,0.81757015){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}phi(t)\end{tabular}}}}}%
+    \put(0.23149516,0.79592369){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}alpha(t)\end{tabular}}}}%
+    \put(0.4009381,0.82922594){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{presa_svg-tex.pdf}}%
+    \put(0.09124419,0.78426791){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}alpha\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{presa_svg-tex.pdf}}%
+    \put(0.30038008,0.71322311){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Modelo \end{tabular}}}}%
+    \put(0.28938334,0.69546192){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Identificado\end{tabular}}}}%
+    \put(0.27398105,0.67770072){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(en lazo abierto)2\end{tabular}}}}%
+    \put(0.40112903,0.69601695){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y(t)\end{tabular}}}}%
+    \put(0.23149516,0.69601695){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{presa_svg-tex.pdf}}%
+    \put(0.17932164,0.82922594){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}alpha_in\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{presa_svg-tex.pdf}}%
+    \put(0.467577,0.83477632){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}alpha_in\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{presa_svg-tex.pdf}}%
+    \put(0.32918175,0.52950572){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}alpha_mod(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{presa_svg-tex.pdf}}%
+    \put(0.10439158,0.31248608){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}+\end{tabular}}}}%
+    \put(0.1080687,0.30860082){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}−\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{presa_svg-tex.pdf}}%
+    \put(0.36803437,0.207584){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y*\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{presa_svg-tex.pdf}}%
+    \put(0.32918175,0.37409524){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}alpha_ident(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{presa_svg-tex.pdf}}%
+    \put(0.19649338,0.13542914){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y*\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{presa_svg-tex.pdf}}%
+    \put(0.23310809,0.12432839){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y_mod(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{presa_svg-tex.pdf}}%
+    \put(0.29714609,0.11322764){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y_ident(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{presa_svg-tex.pdf}}%
+    \put(0.56784785,0.45735085){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y_mod(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{presa_svg-tex.pdf}}%
+    \put(0.5345456,0.31304112){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y_ident(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{presa_svg-tex.pdf}}%
+    \put(0.14551653,0.07992539){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}alpha_mod(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{presa_svg-tex.pdf}}%
+    \put(0.22620454,0.05217352){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}alpha_ident(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{presa_svg-tex.pdf}}%
+    \put(0.2875717,0.00721549){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}alpha0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{presa_svg-tex.pdf}}%
+    \put(-0.00000749,0.42404861){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y_mod(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{presa_svg-tex.pdf}}%
+    \put(0.56784785,0.4906531){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x_mod(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{presa_svg-tex.pdf}}%
+    \put(0.00852621,0.26863812){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y_ident(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{presa_svg-tex.pdf}}%
+    \put(0.02998193,0.47400198){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y*\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{presa_svg-tex.pdf}}%
+    \put(0.04108268,0.31304112){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y*\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{presa_svg-tex.pdf}}%
+    \put(0.36418352,0.5900048){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}phi(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{presa_svg-tex.pdf}}%
+    \put(0.28354768,0.20702897){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y*(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{presa_svg-tex.pdf}}%
+    \put(0.37808532,0.33024728){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Modelo \end{tabular}}}}%
+    \put(0.36708858,0.31248608){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Identificado\end{tabular}}}}%
+    \put(0.35362892,0.29472488){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}(en lazo cerrado)\end{tabular}}}}%
+    \put(0.47883427,0.31304112){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y(t)\end{tabular}}}}%
+    \put(0.3092004,0.31304112){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{presa_svg-tex.pdf}}%
+    \put(0.19264253,0.47344694){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}C(s)|_0\end{tabular}}}}%
+    \put(0.24138148,0.47400198){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}alpha(t)\end{tabular}}}}%
+    \put(0.14823954,0.47400198){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}e(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{presa_svg-tex.pdf}}%
+    \put(0.2021914,0.31248608){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}C(s)\end{tabular}}}}%
+    \put(0.24138148,0.31304112){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}alpha(t)\end{tabular}}}}%
+    \put(0.14823954,0.31304112){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}e(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{presa_svg-tex.pdf}}%
+    \put(0.50124335,0.59055984){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}phi_pre\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{presa_svg-tex.pdf}}%
+    \put(0.2333512,0.87862427){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}phi0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{presa_svg-tex.pdf}}%
+    \put(0.62913619,0.91192652){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Sub\end{tabular}}}}%
+    \put(0.57561837,0.91248156){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y(t)\end{tabular}}}}%
+    \put(0.57561837,0.92358231){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x(t)\end{tabular}}}}%
+    \put(0.57561837,0.93468305){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}alpha(t)\end{tabular}}}}%
+    \put(0.69840264,0.91248156){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}V\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{presa_svg-tex.pdf}}%
+    \put(0.35656951,0.93468305){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}alpha_in\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{presa_svg-tex.pdf}}%
+    \put(0.65340132,0.62885742){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Sub1\end{tabular}}}}%
+    \put(0.60337024,0.62941246){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y(t)\end{tabular}}}}%
+    \put(0.60337024,0.64051321){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x(t)\end{tabular}}}}%
+    \put(0.60337024,0.65161396){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}alpha(t)\end{tabular}}}}%
+    \put(0.72615452,0.62941246){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}V\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{presa_svg-tex.pdf}}%
+    \put(0.52308075,0.70156733){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}alpha_in\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{presa_svg-tex.pdf}}%
+    \put(0.83028509,0.75651604){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Scope1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{presa_svg-tex.pdf}}%
+    \put(0.87364728,0.22701031){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Modelo\end{tabular}}}}%
+    \put(0.84355382,0.20924912){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}presa-depredador\end{tabular}}}}%
+    \put(0.97836797,0.19648326){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}y(t)\end{tabular}}}}%
+    \put(0.91030595,0.23583874){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}gamma(t)\end{tabular}}}}}%
+    \put(0.79763335,0.21868475){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}alpha(t)\end{tabular}}}}%
+    \put(0.97817704,0.24643662){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}x(t)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{presa_svg-tex.pdf}}%
+  \end{picture}%
+\endgroup%

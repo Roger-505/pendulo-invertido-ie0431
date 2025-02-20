@@ -1,0 +1,50 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{preambulo}[2022/09/12 preambulo]
+
+\usepackage[spanish, es-nodecimaldot]{babel}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks]{hyperref}
+\usepackage{siunitx}
+\usepackage{chemplants}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{amssymb}
+\usepackage{svg}
+\usepackage{caption}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{hyperref}
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\pgfplotsset{compat=newest,
+            width=7cm, height=6cm,
+            %xtick pos=left, ytick pos=left
+            }
+
+\usetikzlibrary{calc,arrows.meta,positioning}
+\renewcommand{\vec}[1]{\boldsymbol{#1}} 
+\newcommand{\flow}[1]{\dot{#1}}
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+
+\newcommand{\Z}{\mathbb{Z}}     % numeros enteros
+\newcommand{\N}{\mathbb{N}}     % numeros naturales
+\newcommand{\C}{\mathbb{C}}     % numeros complejos
+\newcommand{\R}{\mathbb{R}}     % numeros reales
+
+%setup new colors
+\hypersetup{
+%linkcolor=BrickRed
+linkcolor=red
+,citecolor=Green
+,filecolor=Mulberry
+,urlcolor=NavyBlue
+,menucolor=BrickRed
+,runcolor=Mulberry
+,linkbordercolor=BrickRed
+,citebordercolor=Green
+,filebordercolor=Mulberry
+,urlbordercolor=NavyBlue
+,menubordercolor=BrickRed
+,runbordercolor=Mulberry
+}

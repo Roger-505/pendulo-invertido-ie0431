@@ -1,0 +1,12 @@
+\section{Simulado del sistema}
+Debido a que la simulación se realizó utilizando un modelo de Simscape de MATLAB,
+se tuvo que escojer cuidadosamente la configuración del tamaño de paso y el solver
+de Simulink para la simulación.
+Se usó el solver ode23tb, siendo este solver el que mejor resultados proporcionó debido 
+a errores con otros solvers, los cuales generaban singularidades en algunas variables durante la 
+simulación.
+Por ser una simulación de Simscape, se configuró el tamaño de paso para que fuese 
+variable con step size automático, lo cual es necesario para que la simulación de 
+Simscape se ejecute adecuadamente.
+Por tanto, no se calculó un tamaño de paso máximo.
+

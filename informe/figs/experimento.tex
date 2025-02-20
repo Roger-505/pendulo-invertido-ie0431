@@ -1,0 +1,19 @@
+\begin{tikzpicture}
+    \begin{axis}[
+        xlabel={Porcentaje apertura de la válvula de salida (\%)},
+        ylabel={Porcentaje de la altura del líquido en el tanque (\%)},
+        legend pos=north west,  % Position of the legend         
+        legend cell align={left},
+        xmin=0.0,
+        ymin=0,
+        xmax=100,
+        ymax=100,
+        legend pos=south east,
+        xtick distance = 10,
+        ytick distance = 10
+    ]
+    \addplot[blue, thick,mark=*] table [x index=0, y index=1, col sep=comma]{figs/experimento.csv};
+    %\addplot[blue, thick,mark=*] table [x expr=\thisrow{apertura}*100, y expr=\thisrow{nivel}*(100/30)]{test.txt};
+    %\addplot[blue] table [x=time,y=h,col sep=comma]{figs/experimento.csv};
+    \end{axis}
+\end{tikzpicture}

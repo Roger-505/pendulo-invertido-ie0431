@@ -1,0 +1,39 @@
+\begin{figure}
+    \centering
+    \begin{tikzpicture}[auto, node distance=2.5cm]
+    \tikzstyle{block} = [draw, fill=white, rectangle, 
+        minimum height=3em, minimum width=4em, node distance=2.5cm]
+    \tikzstyle{bigblock} = [draw, fill=white, rectangle, 
+        minimum height=5em, minimum width=4em, node distance=2.5cm]
+        \tikzstyle{gain} = [draw, fill=white, rectangle, 
+        minimum height=3em, minimum width=2em, node distance=2.5cm]
+        \tikzstyle{sum} = [draw, fill=white, circle, minimum size=15pt, node distance=2cm]
+        \tikzstyle{input} = [coordinate]
+        \tikzstyle{output} = [coordinate]
+        \tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+
+       \node [input, name=input]{};
+       \node [bigblock, right of=input](proceso){\parbox{2cm}{\centering Modelo\\presa--depredador}};
+       %\node [output, right of=sensor,xshift=-3em](output){};
+       \node [input, name=pert,above of=proceso,yshift=-3em]{};
+
+       \node[above] at (pert){ $\gamma(t)$}; 
+       \node[left] at (input){$\alpha(t)$};
+       \draw [-{Latex}] (input) -- (proceso) node[name=x]{};
+       \coordinate (up) at ($(proceso) + (1.111,0.6)$);
+       \coordinate (down) at ($(proceso) + (1.111,-0.6)$);
+       \node [block, right of=up](sensor1){Sensor};
+       \node [block, right of=down](sensor2){Sensor};
+
+       \node [output, right of=sensor1](output1){};
+       \node [output, right of=sensor2](output2){};
+
+       \draw [-{Latex}] (up) -- (sensor1) node[name=x,midway,above]{$x(t)$};
+       \draw [-{Latex}] (down) -- (sensor2) node[name=y,midway,above]{$y(t)$};
+       \draw [-{Latex}] (pert) -- (proceso);
+       \draw [-{Latex}] (sensor1) -- (output1) node[name=y,midway,above]{$\widehat{x}(t)$};
+       \draw [-{Latex}] (sensor2) -- (output2) node[name=y,midway,above]{$\widehat{y}(t)$};
+    \end{tikzpicture}
+    \caption{Sistema por ser modelado}
+    \label{fig1}
+\end{figure}
